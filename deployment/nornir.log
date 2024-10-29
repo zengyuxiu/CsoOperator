@@ -1,0 +1,16 @@
+2024-10-24 11:19:03,071 -  nornir.core -     INFO -        run() - Running task 'install_docker' with args {} on 1 hosts
+2024-10-24 11:19:15,597 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_sftp' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: paramiko_sftp() got an unexpected keyword argument 'dest'
+
+2024-10-24 11:19:16,524 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_docker' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 54, in install_docker
+    print_result(result)
+UnboundLocalError: local variable 'result' referenced before assignment
+
+2024-10-24 11:19:30,491 -  nornir.core -     INFO -        run() - Running task 'install_docker' with args {} on 1 hosts

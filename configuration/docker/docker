@@ -1,0 +1,1 @@
+DOCKER_OPTS="-H tcp://0.0.0.0:2375 --insecure-registry localregistry:5000"

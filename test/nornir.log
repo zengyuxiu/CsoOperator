@@ -1,0 +1,755 @@
+2024-10-24 10:56:31,562 -  nornir.core -     INFO -        run() - Running task 'install_docker' with args {} on 1 hosts
+2024-10-24 10:56:46,155 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_sftp' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: paramiko_sftp() got an unexpected keyword argument 'dest'
+
+2024-10-24 10:56:46,155 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_docker' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 32, in install_docker
+    task.run(task=paramiko_sftp, action="put", src=f"{docker_config_dir}/docker", dest="/etc/default/docker")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_sftp (failed)
+
+
+2024-10-24 11:02:56,730 -  nornir.core -     INFO -        run() - Running task 'install_docker' with args {} on 1 hosts
+2024-10-24 11:03:05,280 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_sftp' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: paramiko_sftp() got an unexpected keyword argument 'dest'
+
+2024-10-24 11:03:05,281 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_docker' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 32, in install_docker
+    task.run(task=paramiko_sftp, action="put", src=f"{docker_config_dir}/docker", dest="/etc/default/docker")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_sftp (failed)
+
+
+2024-10-24 11:05:35,820 -  nornir.core -     INFO -        run() - Running task 'install_docker' with args {} on 1 hosts
+2024-10-24 11:05:44,964 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_sftp' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: paramiko_sftp() got an unexpected keyword argument 'dest'
+
+2024-10-24 11:05:44,965 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_docker' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 33, in install_docker
+    task.run(task=paramiko_sftp, action="put", src=f"{docker_config_dir}/docker", dest="/etc/default/docker")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_sftp (failed)
+
+
+2024-10-24 11:07:16,268 -  nornir.core -     INFO -        run() - Running task 'install_docker' with args {} on 1 hosts
+2024-10-24 11:07:23,645 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_sftp' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: paramiko_sftp() got an unexpected keyword argument 'dest'
+
+2024-10-24 11:07:23,645 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_docker' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 33, in install_docker
+    result = task.run(task=paramiko_sftp, action="put", src=f"{docker_config_dir}/docker", dest="/etc/default/docker")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_sftp (failed)
+
+
+2024-10-24 11:10:15,219 -  nornir.core -     INFO -        run() - Running task 'install_docker' with args {} on 1 hosts
+2024-10-24 11:10:18,567 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_sftp' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: paramiko_sftp() got an unexpected keyword argument 'dest'
+
+2024-10-24 11:10:19,407 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_docker' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 54, in install_docker
+    print_result(result)
+UnboundLocalError: local variable 'result' referenced before assignment
+
+2024-10-24 11:11:00,033 -  nornir.core -     INFO -        run() - Running task 'install_docker' with args {} on 1 hosts
+2024-10-24 11:11:17,230 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_sftp' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: paramiko_sftp() got an unexpected keyword argument 'dest'
+
+2024-10-24 11:11:18,312 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_docker' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 54, in install_docker
+    print_result(result)
+UnboundLocalError: local variable 'result' referenced before assignment
+
+2024-10-24 11:11:35,751 -  nornir.core -     INFO -        run() - Running task 'install_docker' with args {} on 1 hosts
+2024-10-24 11:11:38,870 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_sftp' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: paramiko_sftp() got an unexpected keyword argument 'dest'
+
+2024-10-24 11:11:39,715 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_docker' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 54, in install_docker
+    print_result(result)
+UnboundLocalError: local variable 'result' referenced before assignment
+
+2024-10-24 11:11:44,562 -  nornir.core -     INFO -        run() - Running task 'install_docker' with args {} on 1 hosts
+2024-10-24 11:11:47,246 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_sftp' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: paramiko_sftp() got an unexpected keyword argument 'dest'
+
+2024-10-24 11:11:48,162 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_docker' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 54, in install_docker
+    print_result(result)
+UnboundLocalError: local variable 'result' referenced before assignment
+
+2024-10-24 11:11:59,096 -  nornir.core -     INFO -        run() - Running task 'install_docker' with args {} on 1 hosts
+2024-10-24 11:12:02,003 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_sftp' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: paramiko_sftp() got an unexpected keyword argument 'dest'
+
+2024-10-24 11:12:02,930 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_docker' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 54, in install_docker
+    print_result(result)
+UnboundLocalError: local variable 'result' referenced before assignment
+
+2024-10-24 11:17:22,920 -  nornir.core -     INFO -        run() - Running task 'install_docker' with args {} on 1 hosts
+2024-10-24 11:18:00,794 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_sftp' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: paramiko_sftp() got an unexpected keyword argument 'dest'
+
+2024-10-24 11:18:01,598 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_docker' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 54, in install_docker
+    print_result(result)
+UnboundLocalError: local variable 'result' referenced before assignment
+
+2024-10-24 11:23:10,040 -  nornir.core -     INFO -        run() - Running task 'install_docker' with args {} on 1 hosts
+2024-10-24 11:23:17,632 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_sftp' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 180, in paramiko_sftp
+    files_changed = actions[action](task, scp_client, sftp_client, src, dst, dry_run)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 127, in put
+    changed = compare_put_files(task, sftp_client, src, dst)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 59, in compare_put_files
+    dst_hash = get_dst_hash(task, dst)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 30, in get_dst_hash
+    result = paramiko_command(task, command)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_command.py", line 35, in paramiko_command
+    raise CommandError(command, exit_status_code, stdout, stderr)
+nornir_paramiko.exceptions.CommandError: ('sha1sum /etc/docker/daemon.json', 1, '', 'sha1sum: /etc/docker/daemon.json: 没有那个文件或目录\n')
+
+2024-10-24 11:23:17,633 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_docker' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 35, in install_docker
+    task.run(task=paramiko_sftp, action="put", src=f"{docker_config_dir}/daemon.json",
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_sftp (failed)
+
+
+2024-10-24 11:23:17,642 -  nornir.core -     INFO -        run() - Running task 'install_docker' with args {} on 1 hosts
+2024-10-24 11:23:20,636 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_sftp' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 180, in paramiko_sftp
+    files_changed = actions[action](task, scp_client, sftp_client, src, dst, dry_run)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 127, in put
+    changed = compare_put_files(task, sftp_client, src, dst)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 59, in compare_put_files
+    dst_hash = get_dst_hash(task, dst)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 30, in get_dst_hash
+    result = paramiko_command(task, command)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_command.py", line 35, in paramiko_command
+    raise CommandError(command, exit_status_code, stdout, stderr)
+nornir_paramiko.exceptions.CommandError: ('sha1sum /etc/docker/daemon.json', 1, '', 'sha1sum: /etc/docker/daemon.json: 没有那个文件或目录\n')
+
+2024-10-24 11:23:20,637 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_docker' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 35, in install_docker
+    task.run(task=paramiko_sftp, action="put", src=f"{docker_config_dir}/daemon.json",
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_sftp (failed)
+
+
+2024-10-24 11:27:16,861 -  nornir.core -     INFO -        run() - Running task 'install_docker' with args {} on 1 hosts
+2024-10-24 11:27:24,644 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_sftp' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 180, in paramiko_sftp
+    files_changed = actions[action](task, scp_client, sftp_client, src, dst, dry_run)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 127, in put
+    changed = compare_put_files(task, sftp_client, src, dst)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 59, in compare_put_files
+    dst_hash = get_dst_hash(task, dst)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 30, in get_dst_hash
+    result = paramiko_command(task, command)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_command.py", line 35, in paramiko_command
+    raise CommandError(command, exit_status_code, stdout, stderr)
+nornir_paramiko.exceptions.CommandError: ('sha1sum /etc/docker/daemon.json', 1, '', 'sha1sum: /etc/docker/daemon.json: 没有那个文件或目录\n')
+
+2024-10-24 11:27:24,645 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_docker' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 29, in install_docker
+    task.run(task=paramiko_sftp, action="put", src=f"{docker_config_dir}/daemon.json",
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_sftp (failed)
+
+
+2024-10-24 11:27:24,656 -  nornir.core -     INFO -        run() - Running task 'install_docker' with args {} on 1 hosts
+2024-10-24 11:27:27,536 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_sftp' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 180, in paramiko_sftp
+    files_changed = actions[action](task, scp_client, sftp_client, src, dst, dry_run)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 127, in put
+    changed = compare_put_files(task, sftp_client, src, dst)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 59, in compare_put_files
+    dst_hash = get_dst_hash(task, dst)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 30, in get_dst_hash
+    result = paramiko_command(task, command)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_command.py", line 35, in paramiko_command
+    raise CommandError(command, exit_status_code, stdout, stderr)
+nornir_paramiko.exceptions.CommandError: ('sha1sum /etc/docker/daemon.json', 1, '', 'sha1sum: /etc/docker/daemon.json: 没有那个文件或目录\n')
+
+2024-10-24 11:27:27,536 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_docker' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 29, in install_docker
+    task.run(task=paramiko_sftp, action="put", src=f"{docker_config_dir}/daemon.json",
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_sftp (failed)
+
+
+2024-10-24 11:28:44,477 -  nornir.core -     INFO -        run() - Running task 'install_docker' with args {} on 1 hosts
+2024-10-24 11:28:54,806 -  nornir.core -     INFO -        run() - Running task 'install_docker' with args {} on 1 hosts
+2024-10-24 11:30:02,586 -  nornir.core -     INFO -        run() - Running task 'install_docker' with args {} on 1 hosts
+2024-10-24 11:30:31,359 -  nornir.core -     INFO -        run() - Running task 'install_docker' with args {} on 1 hosts
+2024-10-24 11:33:45,282 -  nornir.core -     INFO -        run() - Running task 'raise_local_image_regisrty' with args {} on 1 hosts
+2024-10-24 11:33:45,283 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_sftp' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: paramiko_sftp() got an unexpected keyword argument 'dest'
+
+2024-10-24 11:33:45,283 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'raise_local_image_regisrty' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 40, in raise_local_image_regisrty
+    task.run(task=paramiko_sftp, action="put", src=f"{os_config_dir}/localregistry.host", dest="/tmp/hosts")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_sftp (failed)
+
+
+2024-10-24 11:33:59,556 -  nornir.core -     INFO -        run() - Running task 'raise_local_image_regisrty' with args {} on 1 hosts
+2024-10-24 11:33:59,557 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_sftp' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: paramiko_sftp() got an unexpected keyword argument 'dest'
+
+2024-10-24 11:33:59,557 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'raise_local_image_regisrty' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 40, in raise_local_image_regisrty
+    task.run(task=paramiko_sftp, action="put", src=f"{os_config_dir}/localregistry.host", dest="/tmp/hosts")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_sftp (failed)
+
+
+2024-10-24 11:35:05,129 -  nornir.core -     INFO -        run() - Running task 'raise_local_image_regisrty' with args {} on 1 hosts
+2024-10-24 11:35:05,583 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_sftp' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: paramiko_sftp() got an unexpected keyword argument 'dest'
+
+2024-10-24 11:35:05,584 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'raise_local_image_regisrty' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 41, in raise_local_image_regisrty
+    task.run(task=paramiko_sftp, action="put", src=f"{os_config_dir}/localregistry.host", dest="/tmp/hosts")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_sftp (failed)
+
+
+2024-10-24 11:35:40,133 -  nornir.core -     INFO -        run() - Running task 'raise_local_image_regisrty' with args {} on 1 hosts
+2024-10-24 11:36:37,473 -  nornir.core -     INFO -        run() - Running task 'raise_local_image_regisrty' with args {} on 1 hosts
+2024-10-24 11:55:30,052 -  nornir.core -     INFO -        run() - Running task 'install_incus' with args {} on 1 hosts
+2024-10-24 11:55:33,910 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_command.py", line 35, in paramiko_command
+    raise CommandError(command, exit_status_code, stdout, stderr)
+nornir_paramiko.exceptions.CommandError: ('apt install -y incus', 100, '正在读取软件包列表...\n正在分析软件包的依赖关系树...\n正在读取状态信息...\n', '\nWARNING: apt does not have a stable CLI interface. Use with caution in scripts.\n\nE: 无法定位软件包 incus\n')
+
+2024-10-24 11:55:33,911 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_incus' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 56, in install_incus
+    task.run(task=paramiko_command, command="apt install -y incus")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_command (failed)
+
+
+2024-10-24 12:00:27,146 -  nornir.core -     INFO -        run() - Running task 'install_incus' with args {} on 1 hosts
+2024-10-24 12:00:38,516 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_command.py", line 35, in paramiko_command
+    raise CommandError(command, exit_status_code, stdout, stderr)
+nornir_paramiko.exceptions.CommandError: ('incus config add trust add-certificate /tmp/lxd.crt', 1, '', 'Error: unknown command "add" for "incus config"\n')
+
+2024-10-24 12:00:38,516 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_incus' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 66, in install_incus
+    task.run(task=paramiko_command, command="incus config add trust add-certificate /tmp/lxd.crt")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_command (failed)
+
+
+2024-10-24 12:01:30,582 -  nornir.core -     INFO -        run() - Running task 'install_incus' with args {} on 1 hosts
+2024-10-24 12:12:11,264 -  nornir.core -     INFO -        run() - Running task 'install_incus' with args {} on 1 hosts
+2024-10-24 12:13:34,620 -  nornir.core -     INFO -        run() - Running task 'install_incus' with args {} on 1 hosts
+2024-10-24 12:13:40,920 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_command.py", line 35, in paramiko_command
+    raise CommandError(command, exit_status_code, stdout, stderr)
+nornir_paramiko.exceptions.CommandError: ('incus admin init < /tmp/lxd-init.yaml', 1, '', 'Error: Failed to connect to local daemon: Get "http://unix.socket/1.0": dial unix /var/lib/incus/unix.socket: connect: no such file or directory\n')
+
+2024-10-24 12:13:40,921 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_incus' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 64, in install_incus
+    task.run(task=paramiko_command, command="incus admin init < /tmp/lxd-init.yaml")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_command (failed)
+
+
+2024-10-24 20:05:19,461 -  nornir.core -     INFO -        run() - Running task 'install_k3s_server' with args {} on 1 hosts
+2024-10-24 20:05:20,330 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_sftp' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 180, in paramiko_sftp
+    files_changed = actions[action](task, scp_client, sftp_client, src, dst, dry_run)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 127, in put
+    changed = compare_put_files(task, sftp_client, src, dst)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 66, in compare_put_files
+    for f in os.listdir(src):
+FileNotFoundError: [Errno 2] No such file or directory: '/home/xiu/code/CsoOperator/image/k3s/k3s'
+
+2024-10-24 20:05:20,330 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_k3s_server' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 76, in install_k3s_server
+    task.run(task=paramiko_sftp, action="put", src=f"{image_dir}/k3s/k3s",
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_sftp (failed)
+
+
+2024-10-24 20:14:48,762 -  nornir.core -     INFO -        run() - Running task 'install_k3s_server' with args {} on 1 hosts
+2024-10-24 20:15:05,341 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_k3s_server' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 81, in install_k3s_server
+    with tarfile.open(f"{image_dir}/k3s-airgap-images-amd64.tar.gz", "r:gz") as image_file:
+  File "/usr/lib/python3.9/tarfile.py", line 1810, in open
+    return func(name, filemode, fileobj, **kwargs)
+  File "/usr/lib/python3.9/tarfile.py", line 1856, in gzopen
+    fileobj = GzipFile(name, mode + "b", compresslevel, fileobj)
+  File "/usr/lib/python3.9/gzip.py", line 173, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/home/xiu/code/CsoOperator/image/k3s-airgap-images-amd64.tar.gz'
+
+2024-10-24 20:15:43,853 -  nornir.core -     INFO -        run() - Running task 'install_k3s_server' with args {} on 1 hosts
+2024-10-24 20:15:45,432 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_k3s_server' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 85, in install_k3s_server
+    for repo, tags in imageinfos.items:
+TypeError: 'builtin_function_or_method' object is not iterable
+
+2024-10-24 20:17:07,589 -  nornir.core -     INFO -        run() - Running task 'install_k3s_server' with args {} on 1 hosts
+2024-10-24 20:17:21,264 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_k3s_server' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 85, in install_k3s_server
+    for repo, tags in imageinfos.items:
+TypeError: 'builtin_function_or_method' object is not iterable
+
+2024-10-24 20:18:30,169 -  nornir.core -     INFO -        run() - Running task 'install_k3s_server' with args {} on 1 hosts
+2024-10-24 20:59:46,787 -  nornir.core -     INFO -        run() - Running task 'install_k3s_server' with args {} on 1 hosts
+2024-10-25 10:03:05,449 -  nornir.core -     INFO -        run() - Running task 'install_k3s_server' with args {} on 1 hosts
+2024-10-25 10:04:00,760 -  nornir.core -     INFO -        run() - Running task 'install_k3s_server' with args {} on 1 hosts
+2024-10-25 10:04:01,744 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_command.py", line 35, in paramiko_command
+    raise CommandError(command, exit_status_code, stdout, stderr)
+nornir_paramiko.exceptions.CommandError: ('systemctl enable k3s.service --now', 1, '', 'Created symlink /etc/systemd/system/multi-user.target.wants/k3s.service → /etc/systemd/system/k3s.service.\nJob for k3s.service failed because the control process exited with error code.\nSee "systemctl status k3s.service" and "journalctl -xeu k3s.service" for details.\n')
+
+2024-10-25 10:04:01,744 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_k3s_server' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 109, in install_k3s_server
+    task.run(task=paramiko_command, command="systemctl enable k3s.service --now")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_command (failed)
+
+
+2024-10-25 10:05:38,417 -  nornir.core -     INFO -        run() - Running task 'install_k3s_server' with args {} on 1 hosts
+2024-10-25 10:05:39,346 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_command.py", line 35, in paramiko_command
+    raise CommandError(command, exit_status_code, stdout, stderr)
+nornir_paramiko.exceptions.CommandError: ('cp /opt/k3s/bin/k3s /usr/bin/k3s && chomd +x /usr/bin/k3s', 127, '', 'bash: 行 1: chomd: 未找到命令\n')
+
+2024-10-25 10:05:39,346 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_k3s_server' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 78, in install_k3s_server
+    task.run(task=paramiko_command, command="cp /opt/k3s/bin/k3s /usr/bin/k3s && chomd +x /usr/bin/k3s")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_command (failed)
+
+
+2024-10-25 10:06:08,378 -  nornir.core -     INFO -        run() - Running task 'install_k3s_server' with args {} on 1 hosts
+2024-10-25 10:06:12,859 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_command.py", line 35, in paramiko_command
+    raise CommandError(command, exit_status_code, stdout, stderr)
+nornir_paramiko.exceptions.CommandError: ('systemctl enable k3s.service --now', 1, '', 'Job for k3s.service failed because the control process exited with error code.\nSee "systemctl status k3s.service" and "journalctl -xeu k3s.service" for details.\n')
+
+2024-10-25 10:06:12,860 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_k3s_server' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 109, in install_k3s_server
+    task.run(task=paramiko_command, command="systemctl enable k3s.service --now")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_command (failed)
+
+
+2024-10-25 10:06:56,324 -  nornir.core -     INFO -        run() - Running task 'install_k3s_server' with args {} on 1 hosts
+2024-10-26 14:40:57,537 -  nornir.core -     INFO -        run() - Running task 'get_k3s_server_node_token' with args {} on 1 hosts
+2024-10-26 14:40:58,261 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_sftp' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 180, in paramiko_sftp
+    files_changed = actions[action](task, scp_client, sftp_client, src, dst, dry_run)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 110, in get
+    changed = compare_get_files(task, sftp_client, src, dst)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 79, in compare_get_files
+    st_mode = sftp_client.stat(src).st_mode
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/paramiko/sftp_client.py", line 493, in stat
+    t, msg = self._request(CMD_STAT, path)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/paramiko/sftp_client.py", line 822, in _request
+    return self._read_response(num)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/paramiko/sftp_client.py", line 874, in _read_response
+    self._convert_status(msg)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/paramiko/sftp_client.py", line 903, in _convert_status
+    raise IOError(errno.ENOENT, text)
+FileNotFoundError: [Errno 2] No such file
+
+2024-10-26 14:40:58,262 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'get_k3s_server_node_token' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 118, in get_k3s_server_node_token
+    task.run(task=paramiko_sftp, action="get", src=f"{k3s_config_dir}/node-token",
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_sftp (failed)
+
+
+2024-10-26 14:42:09,627 -  nornir.core -     INFO -        run() - Running task 'get_k3s_server_node_token' with args {} on 1 hosts
+2024-10-26 14:42:10,219 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_sftp' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 180, in paramiko_sftp
+    files_changed = actions[action](task, scp_client, sftp_client, src, dst, dry_run)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 110, in get
+    changed = compare_get_files(task, sftp_client, src, dst)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_sftp.py", line 79, in compare_get_files
+    st_mode = sftp_client.stat(src).st_mode
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/paramiko/sftp_client.py", line 493, in stat
+    t, msg = self._request(CMD_STAT, path)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/paramiko/sftp_client.py", line 822, in _request
+    return self._read_response(num)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/paramiko/sftp_client.py", line 874, in _read_response
+    self._convert_status(msg)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/paramiko/sftp_client.py", line 903, in _convert_status
+    raise IOError(errno.ENOENT, text)
+FileNotFoundError: [Errno 2] No such file
+
+2024-10-26 14:42:10,220 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'get_k3s_server_node_token' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 118, in get_k3s_server_node_token
+    task.run(task=paramiko_sftp, action="get", src=f"{k3s_config_dir}/node-token",
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_sftp (failed)
+
+
+2024-10-26 14:49:54,564 -  nornir.core -     INFO -        run() - Running task 'get_k3s_server_node_token' with args {} on 1 hosts
+2024-10-26 14:55:08,477 -  nornir.core -     INFO -        run() - Running task 'get_k3s_server_node_token' with args {} on 1 hosts
+2024-10-26 15:03:42,784 -  nornir.core -     INFO -        run() - Running task 'get_k3s_server_node_token' with args {} on 1 hosts
+2024-10-26 15:04:34,698 -  nornir.core -     INFO -        run() - Running task 'get_k3s_server_node_token' with args {} on 1 hosts
+2024-10-26 15:05:18,480 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'get_k3s_server_node_token' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 123, in get_k3s_server_node_token
+    config['base']['NodeToken'] = str(NodeTokenFile.read().encode().replace("\n",""))
+TypeError: a bytes-like object is required, not 'str'
+
+2024-10-26 15:05:57,302 -  nornir.core -     INFO -        run() - Running task 'get_k3s_server_node_token' with args {} on 1 hosts
+2024-10-26 15:05:57,946 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'get_k3s_server_node_token' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 123, in get_k3s_server_node_token
+    config['base']['NodeToken'] = NodeTokenFile.read().encode().replace("\n", "")
+TypeError: a bytes-like object is required, not 'str'
+
+2024-10-26 15:06:17,091 -  nornir.core -     INFO -        run() - Running task 'get_k3s_server_node_token' with args {} on 1 hosts
+2024-10-26 15:10:19,251 -  nornir.core -     INFO -        run() - Running task 'get_k3s_server_node_token' with args {} on 1 hosts
+2024-10-26 15:10:19,894 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'get_k3s_server_node_token' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 123, in get_k3s_server_node_token
+    config['base']['NodeToken'] = NodeTokenFile.read().decode('utf-8').strip()
+AttributeError: 'str' object has no attribute 'decode'
+
+2024-10-26 15:12:10,591 -  nornir.core -     INFO -        run() - Running task 'get_k3s_server_node_token' with args {} on 1 hosts
+2024-10-26 15:31:01,673 -  nornir.core -     INFO -        run() - Running task 'get_k3s_server_node_token' with args {} on 1 hosts
+2024-10-26 15:31:02,414 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'get_k3s_server_node_token' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 124, in get_k3s_server_node_token
+    NodeTokenFile.seek(0)
+ValueError: I/O operation on closed file.
+
+2024-10-26 15:31:32,436 -  nornir.core -     INFO -        run() - Running task 'get_k3s_server_node_token' with args {} on 1 hosts
+2024-10-26 15:31:58,963 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'get_k3s_server_node_token' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 124, in get_k3s_server_node_token
+    NodeTokenFile.seek(0)
+ValueError: I/O operation on closed file.
+
+2024-10-26 15:32:51,005 -  nornir.core -     INFO -        run() - Running task 'get_k3s_server_node_token' with args {} on 1 hosts
+2024-10-26 19:34:58,095 -  nornir.core -     INFO -        run() - Running task 'install_incus' with args {} on 1 hosts
+2024-10-26 19:35:10,585 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_command.py", line 35, in paramiko_command
+    raise CommandError(command, exit_status_code, stdout, stderr)
+nornir_paramiko.exceptions.CommandError: ('incus admin init < /tmp/lxd-init.yaml', 1, 'Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: ', 'Invalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nError: EOF\n')
+
+2024-10-26 19:35:10,586 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_incus' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 73, in install_incus
+    task.run(task=paramiko_command, command="incus admin init < /tmp/lxd-init.yaml")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_command (failed)
+
+
+2024-10-26 19:36:26,106 -  nornir.core -     INFO -        run() - Running task 'install_incus' with args {} on 1 hosts
+2024-10-26 19:36:33,825 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_command.py", line 35, in paramiko_command
+    raise CommandError(command, exit_status_code, stdout, stderr)
+nornir_paramiko.exceptions.CommandError: ('incus admin init < /tmp/lxd-init.yaml', 1, 'Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: ', 'Invalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nError: EOF\n')
+
+2024-10-26 19:36:33,826 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_incus' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 73, in install_incus
+    task.run(task=paramiko_command, command="incus admin init < /tmp/lxd-init.yaml")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_command (failed)
+
+
+2024-10-26 19:40:31,402 -  nornir.core -     INFO -        run() - Running task 'install_incus' with args {} on 1 hosts
+2024-10-26 19:40:36,357 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_command.py", line 35, in paramiko_command
+    raise CommandError(command, exit_status_code, stdout, stderr)
+nornir_paramiko.exceptions.CommandError: ('incus admin init < /tmp/lxd-init.yaml', 1, 'Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: Would you like to use clustering? (yes/no) [default=no]: ', 'Invalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nInvalid input, try again.\n\nError: EOF\n')
+
+2024-10-26 19:40:36,358 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_incus' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 73, in install_incus
+    task.run(task=paramiko_command, command="incus admin init < /tmp/lxd-init.yaml")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_command (failed)
+
+
+2024-10-26 22:58:49,854 -  nornir.core -     INFO -        run() - Running task 'get_k3s_server_access' with args {} on 1 hosts
+2024-10-26 23:07:43,235 -  nornir.core -     INFO -        run() - Running task 'get_k3s_server_access' with args {} on 1 hosts
+2024-10-28 14:26:49,598 -  nornir.core -     INFO -        run() - Running task 'raise_local_image_regisrty' with args {} on 1 hosts
+2024-10-28 14:26:53,852 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_command.py", line 35, in paramiko_command
+    raise CommandError(command, exit_status_code, stdout, stderr)
+nornir_paramiko.exceptions.CommandError: ('sudo docker run -d -p 5000:5000 --restart always --name registry registry:2', 125, '7a7e9ee30a6e865801bbd0a2be894f48b008d46259824986b55ddfdc068f4290\n', 'docker: Error response from daemon: driver failed programming external connectivity on endpoint registry (8a9706f2f00f567cc5028cee54bcafae3d046dfc73f2b8781c7b1b1a87fd278d): Error starting userland proxy: listen tcp4 0.0.0.0:5000: bind: address already in use.\n')
+
+2024-10-28 14:26:53,852 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'raise_local_image_regisrty' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 59, in raise_local_image_regisrty
+    task.run(task=paramiko_command,
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_command (failed)
+
+
+2024-10-28 14:28:09,707 -  nornir.core -     INFO -        run() - Running task 'install_k3s_server' with args {} on 1 hosts
+2024-10-28 14:28:27,460 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_command.py", line 35, in paramiko_command
+    raise CommandError(command, exit_status_code, stdout, stderr)
+nornir_paramiko.exceptions.CommandError: ('docker push localregistry:5000/klipper-helm:v0.9.2-build20240828', 1, 'The push refers to repository [localregistry:5000/klipper-helm]\n', 'Get "https://localregistry:5000/v2/": dial tcp: lookup localregistry: Temporary failure in name resolution\n')
+
+2024-10-28 14:28:27,461 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'install_k3s_server' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 102, in install_k3s_server
+    task.run(task=paramiko_command, command=f"docker push {repo}:{tag}")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_command (failed)
+
+
+2024-10-28 14:31:46,260 -  nornir.core -     INFO -        run() - Running task 'install_k3s_server' with args {} on 1 hosts
+2024-10-28 14:40:06,467 -  nornir.core -     INFO -        run() - Running task 'access_incus_server' with args {} on 1 hosts
+2024-10-28 14:40:07,158 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_command.py", line 35, in paramiko_command
+    raise CommandError(command, exit_status_code, stdout, stderr)
+nornir_paramiko.exceptions.CommandError: ('lxc config trust add-certificate /tmp/lxd.crt', 1, '', 'Error: unknown command "add-certificate" for "lxc config trust"\n')
+
+2024-10-28 14:40:07,158 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'access_incus_server' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 85, in access_incus_server
+    task.run(task=paramiko_command, command="lxc config trust add-certificate /tmp/lxd.crt")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_command (failed)
+
+

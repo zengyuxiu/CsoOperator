@@ -1,0 +1,12 @@
+base:
+  AccessIp:
+  - 100.64.6.6
+  - 192.168.89.225
+  - 110.254.254.254
+  - 10.255.254.254
+  ManageIp: 110.254.254.254
+  NodeToken: K10558e91267c9b1d86070be803ff8b80e20caf14044ab9e2fdc22eec877ab30daa::server:nuaa
+  RootPassWord: nuaa
+  SSHPort: 22
+  ServerIp: 100.64.6.6
+  Project:

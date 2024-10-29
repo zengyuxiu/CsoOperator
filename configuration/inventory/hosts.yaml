@@ -1,0 +1,6 @@
+---
+nuc-debian:
+  hostname: 100.64.6.6
+  port: 22
+  username: root
+  password: nuaa

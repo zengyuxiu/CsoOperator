@@ -1,0 +1,28 @@
+{
+    "hosts": [
+        {
+            "name": "host89",
+            "os": "Linux",
+            "ip": "192.163.3.34/24",
+            "gateway": "192.163.3.254",
+            "switcher": "switch2"
+        },
+        {
+            "name": "host900",
+            "os": "Linux",
+            "ip": "192.163.3.57/24",
+            "gateway": "192.163.3.254",
+            "switcher": "switch2"
+        }
+    ],
+    "switches": [
+        {
+            "name": "switch2",
+            "ports": "8",
+            "mgmt_ip": "192.168.3.254/24",
+            "vlan": "",
+            "cascading": []
+        }
+    ],
+    "gateway": []
+}

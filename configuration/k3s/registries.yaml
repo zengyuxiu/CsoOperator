@@ -1,0 +1,9 @@
+mirrors:
+  docker.io:
+    endpoint:
+      - "http://localregistry:5000"
+    rewrite:
+      "^rancher/(.*)": "$1"
+  localregistry:5000:
+    endpoint:
+      - "http://localregistry:5000"

@@ -1,0 +1,8 @@
+token: "{{ base.NodeToken }}"
+write-kubeconfig-mode: "0644"
+bind-address: 0.0.0.0
+advertise-address: {{ base.ManageIp }}
+tls-san:
+{% for item in base.AccessIp %}
+  - "{{ item }}"
+{% endfor %}

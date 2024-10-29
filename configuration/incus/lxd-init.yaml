@@ -1,0 +1,30 @@
+---
+config:
+  core.https_address: "100.64.6.6:8443"
+  images.auto_update_interval: "0"
+networks: []
+storage_pools:
+  - config:
+      size: 100GiB
+    description: ""
+    name: local
+    driver: btrfs
+profiles:
+  - config: {}
+    description: ""
+    devices:
+      root:
+        path: /
+        pool: local
+        type: disk
+    name: default
+projects: []
+cluster:
+  server_name: MyCluster
+  enabled: true
+  member_config: []
+  cluster_address: ""
+  cluster_certificate: ""
+  server_address: ""
+  cluster_token: ""
+  cluster_certificate_path: ""
