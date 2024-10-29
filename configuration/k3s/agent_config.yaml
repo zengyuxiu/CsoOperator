@@ -1,6 +1,5 @@
 node-label: host
-node-name: host900
+node-name: r2
 resolv-conf: /etc/resolv.conf
-server: https://110.254.254.254:6443
-token: K10558e91267c9b1d86070be803ff8b80e20caf14044ab9e2fdc22eec877ab30daa::server:nuaa
-with-node-id: true
+server: https://10.255.254.254:6443
+token: K1083a1247f45d9ffac4b53610212436549b73a5771c790212d05fe588c197d14f4::server:nuaa

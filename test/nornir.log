@@ -753,3 +753,121 @@ Traceback (most recent call last):
 nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_command (failed)
 
 
+2024-10-29 20:50:47,321 -  nornir.core -     INFO -        run() - Running task 'access_incus_server' with args {} on 1 hosts
+2024-10-29 20:52:57,544 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_command.py", line 21, in paramiko_command
+    client = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/connections/__init__.py", line 66, in open
+    client.connect(**extras)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: [Errno 110] Connection timed out
+
+2024-10-29 20:52:57,545 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'access_incus_server' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 82, in access_incus_server
+    task.run(task=paramiko_command, command="touch /tmp/lxd.crt")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_command (failed)
+
+
+2024-10-29 20:53:46,171 -  nornir.core -     INFO -        run() - Running task 'access_incus_server' with args {} on 1 hosts
+2024-10-29 20:55:55,035 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_command.py", line 21, in paramiko_command
+    client = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/connections/__init__.py", line 66, in open
+    client.connect(**extras)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: [Errno 110] Connection timed out
+
+2024-10-29 20:55:55,035 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'access_incus_server' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 82, in access_incus_server
+    task.run(task=paramiko_command, command="touch /tmp/lxd.crt")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_command (failed)
+
+
+2024-10-29 20:58:39,430 -  nornir.core -     INFO -        run() - Running task 'access_incus_server' with args {} on 1 hosts
+2024-10-29 21:02:39,658 -  nornir.core -     INFO -        run() - Running task 'access_incus_server' with args {} on 1 hosts
+2024-10-29 21:04:49,222 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_command.py", line 21, in paramiko_command
+    client = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/connections/__init__.py", line 66, in open
+    client.connect(**extras)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/paramiko/client.py", line 358, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/paramiko/util.py", line 279, in retry_on_signal
+    return function()
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/paramiko/client.py", line 358, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: [Errno 110] Connection timed out
+
+2024-10-29 21:04:49,222 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'access_incus_server' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 82, in access_incus_server
+    task.run(task=paramiko_command, command="touch /tmp/lxd.crt")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_command (failed)
+
+
+2024-10-29 21:06:03,515 -  nornir.core -     INFO -        run() - Running task 'access_incus_server' with args {} on 1 hosts
+2024-10-29 21:06:04,553 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'paramiko_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir_paramiko/plugins/tasks/paramiko_command.py", line 35, in paramiko_command
+    raise CommandError(command, exit_status_code, stdout, stderr)
+nornir_paramiko.exceptions.CommandError: ('lxc config trust add /tmp/lxd.crt', 1, '', 'Error: Certificate already in trust store\n')
+
+2024-10-29 21:06:04,554 - nornir.core.task -    ERROR -      start() - Host 'nuc-debian': task 'access_incus_server' failed with traceback:
+Traceback (most recent call last):
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/xiu/code/CsoOperator/deployment/__init__.py", line 85, in access_incus_server
+    task.run(task=paramiko_command, command="lxc config trust add /tmp/lxd.crt")
+  File "/home/xiu/code/CsoOperator/.venv/lib/python3.9/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: paramiko_command (failed)
+
+
+2024-10-29 21:09:41,415 -  nornir.core -     INFO -        run() - Running task 'get_k3s_server_access' with args {} on 1 hosts

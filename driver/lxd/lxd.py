@@ -1,4 +1,5 @@
 import pylxd
+import re
 import yaml
 from net.topology import UserTopology, UserFirewall, UserHost, UserRouter, UserSwitcher
 from configuration.k3s import k3s_config_dir
@@ -71,6 +72,7 @@ class LXDManager:
         with open(f"{k3s_config_dir}/agent_config.yaml", "r+") as file:
             config = yaml.safe_load(file)
             config["node-name"] = HostName
+            config["server"] = "https://110.254.254.254:6443"
             file.seek(0)
             yaml.dump(config, file)
             file.truncate()
@@ -143,6 +145,52 @@ nohup k3s agent &> /var/log/k3s.log &"""
         })
 
         default_profile.save()
+
+    def add_k3s_agent_support(self):
+        with open(f"{k3s_config_dir}/agent_config.yaml", "r+") as file:
+            config = yaml.safe_load(file)
+            config["node-name"] = "r2"
+            config["server"] = "https://10.255.254.254:6443"
+            file.seek(0)
+            yaml.dump(config, file)
+            file.truncate()
+        instance = self.client.instances.get("r4")
+
+        startScript = f"""#!/bin/bash
+        ln -s /dev/console /dev/kmsg
+        nohup k3s agent &> /var/log/k3s.log &"""
+        instance.files.put("/etc/rancher/k3s/start.sh", startScript)
+        instance.execute(["chmod", "+x", "/etc/rancher/k3s/start.sh"])
+        instance.execute(["mkdir", "-p", "/etc/rancher/k3s"])
+        with open(f"{k3s_config_dir}/agent_config.yaml") as k3sConfigFile:
+            instance.files.put("/etc/rancher/k3s/config.yaml", k3sConfigFile.read().encode())
+        with open(f"{k3s_config_dir}/registries.yaml") as registriesConfigFile:
+            instance.files.put("/etc/rancher/k3s/registries.yaml", registriesConfigFile.read().encode())
+        with open(f"{image_dir}/k3s/k3s", "rb") as k3sBinFile:
+            instance.files.put("/usr/local/bin/k3s", k3sBinFile)
+        hostinfo = """10.255.254.254    localregistry"""
+        instance.files.put("/etc/hosts", hostinfo)
+        instance.execute(["chmod", "+x", "/usr/local/bin/k3s"])
+        osinfo = instance.execute(["cat", "/etc/os-release"])
+        if re.search(r"ID=alpine", osinfo.stdout):
+            instance.files.put("/etc/local.d/k3s.start", startScript)
+            instance.execute(["rc-update", "add", "k3s", "default"])
+        if re.search(r"ID=ubuntu", osinfo.stdout) is not None or re.search(r"ID=kali", osinfo.stdout) is not None:
+            systemctlScript = f"""[Unit]
+            Description=K3s Agent Service
+            After=network.target
+
+            [Service]
+            Type=forking
+            ExecStart=/etc/rancher/k3s/start.sh
+            Restart=always
+            RestartSec=5
+
+            [Install]
+            WantedBy=multi-user.target
+                    """
+            instance.files.put("/etc/systemd/system/k3s-agent.service", systemctlScript)
+            instance.execute(["systemctl", "enable", "k3s-agent", "--now"])
 
     def createRouter(self, RouterName, Interfaces):
         return

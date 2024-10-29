@@ -14,6 +14,10 @@ class TestClient(unittest.TestCase):
         inst.stop(wait=True)
         inst.delete(wait=True)
 
+    def testAddInstanceK3sAgent(self):
+        client = lxd.LXDManager()
+        client.add_k3s_agent_support()
+
     def testaddvSupport(self):
         client = lxd.LXDManager()
         client.add_virtualization_support()

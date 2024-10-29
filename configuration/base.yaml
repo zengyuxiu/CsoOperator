@@ -5,8 +5,8 @@ base:
   - 110.254.254.254
   - 10.255.254.254
   ManageIp: 110.254.254.254
-  NodeToken: K10558e91267c9b1d86070be803ff8b80e20caf14044ab9e2fdc22eec877ab30daa::server:nuaa
-  RootPassWord: nuaa
+  NodeToken: K1083a1247f45d9ffac4b53610212436549b73a5771c790212d05fe588c197d14f4::server:nuaa
+  Project: 8d00a1cded644486b806163585e084a1
+  RootPassWord: root
   SSHPort: 22
-  ServerIp: 100.64.6.6
-  Project:
+  ServerIp: 100.81.9.9
